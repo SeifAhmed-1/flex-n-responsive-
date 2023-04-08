@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+.boxes{
+    margin-top: 30px;
+    padding: 100px 50px;
+    background-color: cadetblue;
+}
+
+.boxes .container .row .box{
+    width: 19%;
+    height: 200px;
+    background-color: #f8fbfe;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boxes .row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* 
+XL > 1200
+
+1200 > L > 992
+
+992 > M > 768
+
+768 > S > 600
+
+600 > XS
+
+
+*/
+
+@media screen and (min-width:1200px) {
+    .boxes .box{
+        width: 19%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .boxes .box{
+        width: 24%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .boxes .box {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .boxes .box{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .boxes .box {
+        width: 97%;
+    }
+}   
